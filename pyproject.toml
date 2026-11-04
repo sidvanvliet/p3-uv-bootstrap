@@ -1,23 +1,17 @@
+
 [project]
-name = "cuda-tryout"
+name = "pytorch-template"
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-authors = [
-    { name = "Sid van Vliet", email = "sid@vvliet.me" }
-]
-requires-python = ">=3.13"
+description = "PyTorch CUDA 12.8 notebook template"
+requires-python = ">=3.13,<3.14"
 dependencies = [
     "torch>=2.11.0",
     "torchvision>=0.26.0",
+    "ipykernel",
 ]
 
-[project.scripts]
-cuda-tryout = "cuda_tryout:main"
-
-[build-system]
-requires = ["uv_build>=0.13.7,<0.14.0"]
-build-backend = "uv_build"
+[tool.uv]
+package = false
 
 [tool.uv.sources]
 torch = { index = "pytorch-cu128" }
@@ -26,3 +20,4 @@ torchvision = { index = "pytorch-cu128" }
 [[tool.uv.index]]
 name = "pytorch-cu128"
 url = "https://download.pytorch.org/whl/cu128"
+explicit = true
