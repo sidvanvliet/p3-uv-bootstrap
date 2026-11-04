@@ -1,0 +1,57 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.egg-info/
+build/
+dist/
+
+# UV / virtual environments
+.venv/
+venv/
+env/
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Machine learning outputs
+checkpoints/
+models/
+runs/
+outputs/
+wandb/
+lightning_logs/
+tensorboard/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+
+# Datasets
+data/
+datasets/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
